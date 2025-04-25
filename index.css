@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body, #root {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Layout */
+aside {
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+}
+main {
+  background: #fafbfc;
+}
+
+/* Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Doctor cards */
+[data-testid="doctor-card"] {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+/* Filter panel headings */
+[data-testid="filter-header-moc"],
+[data-testid="filter-header-speciality"],
+[data-testid="filter-header-sort"] {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+/* Radio & checkbox spacing */
+aside input[type="radio"],
+aside input[type="checkbox"] {
+  margin-right: 6px;
+}
+aside label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
